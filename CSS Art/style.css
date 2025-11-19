@@ -1,0 +1,346 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(61,61,240);
+
+}
+
+.box{
+    flex: 1;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: rgb(220,220, 250);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5rem;
+    padding-bottom: 5rem;
+}
+
+.emoji{
+    margin-left: auto;
+    margin-right:auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: radial-gradient(rgb(253, 207, 0) 58%, rgb(255, 170, 13) 80%);
+    box-shadow: 30px 30px 35px rgba(0,0,0,0.25);
+}
+
+.lefteyes{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    left: 60px;
+    top: 30%;
+}
+
+.lefttoppupil{
+    height:35px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 15px;
+    top: 10px;
+    transform: rotate(40deg);
+}
+
+.leftbottompupil{
+    height:14px;
+    width:8px;
+    border-radius: 56%;
+    background-color: white;
+    position: relative;
+    left: 41px;
+    top: 5px;
+    transform: rotate(40deg)
+}
+
+.righteyes{
+    height:70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    left: 160px;
+    top: 7%;
+}
+
+.righttoppupil{
+    height:35px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 16px;
+    top: 10px;
+    transform: rotate(40deg);
+}
+
+.rightbottompupil{
+    height:14px;
+    width:8px;
+    border-radius: 56%;
+    background-color: white;
+    position: relative;
+    left: 43px;
+    top: 5px;
+    transform: rotate(40deg)
+}
+
+.lefteyebrow{
+    height: 70px;
+    width: 25px;
+    border-radius: 60%;
+    background-color:brown;
+    position: relative;
+    left: 65px;
+    bottom: 100px;
+    transform: rotate(55deg)
+}
+
+.leftcover{
+    height: 70px;
+    width: 20px;
+    border-radius: 50%;
+    background-color:rgb(253, 207, 0);
+    position: relative;
+    right: 4px;
+}
+
+.righteyebrow{
+    height: 70px;
+    width: 25px;
+    border-radius: 60%;
+    background-color: brown;
+    position: relative;
+    bottom: 167px;
+    left: 204px;
+    transform: rotate(-55deg);
+}
+
+.rightcover{
+    height: 70px;
+    width: 20px;
+    border-radius: 50%;
+    background-color:rgb(253, 207, 0);
+    position: relative;
+    left: 9px;
+}
+
+.mouth{
+    height: 50px;
+    width: 76px;
+    border-radius: 50%;
+    background-color: brown;
+    position: relative;
+    left: 110px;
+    bottom: 90px
+}
+
+.mouthcover{
+    height: 40px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: rgb(253, 207, 0);
+    position: relative;
+    left: 6px;
+    bottom: 8px;
+}
+
+.heart1{
+    transform: rotate(-45deg);
+    background-color: rgb(255, 0, 0);
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+
+
+.heart1:hover > .heartBottom1{
+    background-color: rgb(255, 190, 244);
+}
+
+.heart1:hover > .heartBottom1 > .heartLeft1{
+    background-color: rgb(255, 190, 244);
+}
+
+
+.heart1:hover > .heartBottom1 > .heartRight1{
+    background-color: rgb(255, 190, 244);
+} 
+.heartLeft1{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+
+.heartRight1{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+
+.heartBottom1{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+
+@keyframes colorChange{
+    0% {transform:rotate(0deg); background-color: rgb(243, 150, 255); width: 100px; height: 100px;}
+    50%{transform:rotate(180deg); background-color: rgb(176, 116, 255); width: 200px; height: 200px;}
+    100%{transform:rotate(360deg); background-color: rgb(243, 150, 255); width: 100px; height: 100px;}
+}
+
+.rectangle{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(243,150,255);
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.heart2{
+    transform: rotate(-45deg);
+    background-color: rgb(255, 0, 0);
+    margin-top: 40px;
+    transition-property: width, height;
+    transition-duration: 3s;
+}
+
+
+.heart2:hover > .heartBottom2{
+    width: 180px;
+    height: 180px;
+}
+
+.heart2:hover > .heartBottom2 > .heartLeft2{
+    width: 180px;
+    height: 180px;
+}
+
+
+.heart2:hover > .heartBottom2 > .heartRight2{
+    width: 180px;
+    height: 180px;
+} 
+.heartLeft2{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+    transition-property: width, height;
+    transition-duration: 3s;
+}
+
+.heartRight2{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transition-property: width, height;
+    transition-duration: 3s;
+}
+
+.heartBottom2{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    bottom: 0px;
+    transition-property: width, height;
+    transition-duration: 3s;
+}
+
+
+@keyframes beat{
+    0%{width: 120px; height: 120px; background-color: rgb(255, 0, 0);}
+    50%{width:200px; height: 200px; background-color: rgb(165, 0, 14);}
+    100%{width:120px; height: 120px; background-color: rgb(255, 0, 0);}
+}
+
+.heart3{
+    transform: rotate(-45deg);
+    background-color: rgb(255, 0, 0);
+    margin-top: 60px;
+    
+}
+
+.heartLeft3{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.2, 0.90, 0.2, 0.05);
+}
+
+.heartRight3{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.2, 0.90, 0.2, 0.05);
+}
+
+.heartBottom3{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    bottom: 0px;
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.2, 0.90, 0.2, 0.05);
+}
